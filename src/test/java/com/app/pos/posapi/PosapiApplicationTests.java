@@ -28,7 +28,7 @@ class PosapiApplicationTests {
 		System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 		Student[] employees = restTemplate.getForObject("http://localhost:" + randomServerPort + "/api/students",Student[].class);
 
-		assertEquals(5, employees.length);  
+		assertEquals(10, employees.length);  
 	}
 
 }
